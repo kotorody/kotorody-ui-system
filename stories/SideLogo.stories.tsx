@@ -25,7 +25,9 @@ export default {
 const Template: StoryFn<typeof SideLogo> = (args) => <SideLogo {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+    basePath: process.env.STORYBOOK_BASE_PATH || '',
+};
 
 export const CustomSize = Template.bind({});
 CustomSize.args = {

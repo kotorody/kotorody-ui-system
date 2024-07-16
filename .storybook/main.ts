@@ -16,10 +16,14 @@ const config: StorybookConfig = {
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
   ],
-  staticDirs: [
-    { from: '../public', to: '/' },
-    { from: path.resolve(__dirname, '../public'), to: '/' },
-  ],
+  staticDirs: [{ from: '../public', to: '/' }],
+  webpackFinal: async (config) => {
+    config.resolve!.alias = {
+      ...config.resolve!.alias,
+      '@': path.resolve(__dirname, '../src'),
+    };
+    return config;
+  },
   framework: {
     name: "@storybook/react-webpack5",
     options: {},

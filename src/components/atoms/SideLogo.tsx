@@ -2,16 +2,25 @@ import React from 'react';
 import { Image, ImageProps } from '@chakra-ui/react';
 
 interface SideLogoProps extends Omit<ImageProps, 'src' | 'alt'> {
-  // 必要に応じて追加のプロパティを定義
+  basePath?: string;
 }
 
-export const SideLogo: React.FC<SideLogoProps> = (props) => {
+export const SideLogo: React.FC<SideLogoProps> = ({ basePath = '', ...props }) => {
+  const logoPath = process.env.NODE_ENV === 'production' 
+    ? `${basePath}/images/side-logo-aid-on.png`
+    : '/images/side-logo-aid-on.png';
+
+  console.log('Logo path:', logoPath); // デバッグ用
+
   return (
     <Image
-      src="/images/side-logo-aid-on.png"  // publicディレクトリからの相対パスを指定
-      alt="side-logo-aid-on"
+      src={logoPath}
+      alt="Aid-On Side Logo"
       w="137px"
       h="44px"
+      onError={(e) => {
+        console.error('Failed to load logo', e);
+      }}
       {...props}
     />
   );
