@@ -9,7 +9,7 @@ export const SideLogo: React.FC<SideLogoProps> = (props) => {
   return (
     <Image
       src="/images/side-logo-aid-on.png"  // publicディレクトリからの相対パスを指定
-      alt="Logo"
+      alt="side-logo-aid-on"
       w="137px"
       h="44px"
       {...props}
