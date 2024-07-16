@@ -2,7 +2,7 @@ name: Build and Deploy Storybook
 on: 
   push:
     branches:
-      - main  # メインブランチ名に応じて変更してください
+      - main
 
 jobs:
   build-and-deploy:
