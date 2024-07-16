@@ -5,6 +5,9 @@ import { SectionHeading } from '../src/components/atoms/SectionHeading';  // パ
 export default {
   title: 'Atoms/SectionHeading',
   component: SectionHeading,
+  parameters: {
+    layout: 'centered',
+  },
   argTypes: {
     fromColor: { control: 'color' },
     toColor: { control: 'color' },

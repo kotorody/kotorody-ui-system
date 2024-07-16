@@ -5,6 +5,9 @@ import { Tagline, TaglineProps } from '../src/components/atoms/Tagline';
 export default {
   title: 'Atoms/Tagline',
   component: Tagline,
+  parameters: {
+    layout: 'centered',
+  },
   argTypes: {
     children: { control: 'text' },
   },
