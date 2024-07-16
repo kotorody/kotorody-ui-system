@@ -1,4 +1,5 @@
 import type { StorybookConfig } from "@storybook/react-webpack5";
+import path from 'path';
 
 const config: StorybookConfig = {
   stories: [
@@ -14,6 +15,10 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
+  ],
+  staticDirs: [
+    { from: '../public', to: '/' },
+    { from: path.resolve(__dirname, '../public'), to: '/' },
   ],
   framework: {
     name: "@storybook/react-webpack5",

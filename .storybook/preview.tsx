@@ -10,6 +10,7 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    staticDirs: ['../public'],
   },
   decorators: [
     (Story) => (

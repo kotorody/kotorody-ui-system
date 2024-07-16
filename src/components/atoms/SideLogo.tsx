@@ -8,7 +8,7 @@ interface SideLogoProps extends Omit<ImageProps, 'src' | 'alt'> {
 export const SideLogo: React.FC<SideLogoProps> = (props) => {
   return (
     <Image
-      src="/assets/logo.png"  // publicディレクトリからの相対パスを指定
+      src="/images/side-logo-aid-on.png"  // publicディレクトリからの相対パスを指定
       alt="Logo"
       w="137px"
       h="44px"
