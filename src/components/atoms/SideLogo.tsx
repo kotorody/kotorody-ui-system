@@ -1,16 +1,14 @@
 import React from 'react';
 import { Image, ImageProps } from '@chakra-ui/react';
 
-interface SideLogoProps extends Omit<ImageProps, 'src' | 'alt'> {
-  basePath?: string;
-}
+type SideLogoProps = Omit<ImageProps, 'src' | 'alt'>;
 
-export const SideLogo: React.FC<SideLogoProps> = ({ basePath = '', ...props }) => {
-  const logoPath = process.env.NODE_ENV === 'production' 
-    ? `${basePath}/images/side-logo-aid-on.png`
-    : '/images/side-logo-aid-on.png';
+export const SideLogo: React.FC<SideLogoProps> = (props) => {
+  const basePath = process.env.NODE_ENV === 'production' 
+    ? process.env.STORYBOOK_BASE_PATH || ''
+    : '';
 
-  console.log('Logo path:', logoPath); // デバッグ用
+  const logoPath = `${basePath}/images/side-logo-aid-on.png`;
 
   return (
     <Image

@@ -20,7 +20,7 @@ export default {
       </Box>
     ),
   ],
-} as Meta<typeof SideLogo>;
+} as Meta;
 
 const Template: StoryFn<typeof SideLogo> = (args) => <SideLogo {...args} />;
 
@@ -69,6 +69,7 @@ import { SideLogo } from './SideLogo';
 - その他の \`ImageProps\` も使用可能です（ただし、\`src\` と \`alt\` を除く）。
 
 注意: このコンポーネントは '/images/side-logo-aid-on.png' にロゴ画像ファイルが存在することを前提としています。
+環境に応じて適切なパスが自動的に設定されます。
       `,
     },
   },
