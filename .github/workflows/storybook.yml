@@ -19,5 +19,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          branch: gh-pages  # デプロイ先のブランチ
-          folder: storybook-static  # ビルドされたStorybookのディレクトリ
+          branch: gh-pages
+          folder: storybook-static
+          token: ${{ secrets.AIDON_GITHUB_TOKEN }}
