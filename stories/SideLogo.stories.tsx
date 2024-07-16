@@ -25,9 +25,7 @@ export default {
 const Template: StoryFn<typeof SideLogo> = (args) => <SideLogo {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-    basePath: process.env.STORYBOOK_BASE_PATH || '',
-};
+Default.args = {};
 
 export const CustomSize = Template.bind({});
 CustomSize.args = {
@@ -70,7 +68,7 @@ import { SideLogo } from './SideLogo';
 - \`h\`: string | number (optional) - ロゴの高さ (デフォルト: "44px")
 - その他の \`ImageProps\` も使用可能です（ただし、\`src\` と \`alt\` を除く）。
 
-注意: このコンポーネントは '/public/logo.png' にロゴ画像ファイルが存在することを前提としています。
+注意: このコンポーネントは '/images/side-logo-aid-on.png' にロゴ画像ファイルが存在することを前提としています。
       `,
     },
   },
