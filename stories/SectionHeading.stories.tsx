@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import { SectionHeading } from '../../src/components/atoms/SectionHeading';  // パスは実際の場所に合わせて調整してください
+import { SectionHeading } from '../src/components/atoms/SectionHeading';  // パスは実際の場所に合わせて調整してください
 
 export default {
   title: 'Atoms/SectionHeading',

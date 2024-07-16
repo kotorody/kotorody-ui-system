@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import { Tagline, TaglineProps } from '../../src/components/atoms/Tagline';
+import { Tagline, TaglineProps } from '../src/components/atoms/Tagline';
 
 export default {
   title: 'Atoms/Tagline',
