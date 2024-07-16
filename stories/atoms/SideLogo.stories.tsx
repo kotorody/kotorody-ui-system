@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import { SideLogo } from '../src/components/atoms/SideLogo';
+import { SideLogo } from '../../src/components/atoms/SideLogo';
 import { Box } from '@chakra-ui/react';
 
 export default {
