@@ -16,7 +16,7 @@ jobs:
           npm ci
           npm run build-storybook
         env:
-          STORYBOOK_BASE_PATH: /aid-on-ui-system
+          STORYBOOK_BASE_PATH: /kotorody-ui-system
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
