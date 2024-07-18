@@ -33,7 +33,7 @@
   "prettier.semi": true,
   "storybook.enableTelemetry": false,
   "workbench.colorCustomizations": {
-    "statusBar.foreground": "#ffffff",
+    "statusBar.errorForeground": "#ff4785",
     "statusBarItem.errorBackground": "#ff4785",
     "statusBarItem.errorHoverBackground": "#ff79a7"
   }
