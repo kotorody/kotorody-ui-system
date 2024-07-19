@@ -1765,8 +1765,7 @@ const FureaiConciergeTemplate = () => {
           </div>
         </div>
       </div>
-      HTMLとCSSをReactのコンポーネントスタイルに変換しました。以下が結果です：
-      jsxCopy
+
       <div
         className="h"
         style={{
@@ -1928,6 +1927,7 @@ const FureaiConciergeTemplate = () => {
                 letterSpacing: "2px",
                 textAlign: "center",
                 fontFamily: "Hiragino maru gothic Pro",
+                marginTop: "20px",
               }}
             >
               平日 8:45~17:45

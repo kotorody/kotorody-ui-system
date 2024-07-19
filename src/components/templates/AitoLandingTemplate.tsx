@@ -194,6 +194,7 @@ const AitoLandingTemplate = () => {
       <div
         className="b"
         style={{
+          backgroundColor: "aqua",
           width: "100%",
           height: "563px",
           display: "flex",
@@ -204,15 +205,17 @@ const AitoLandingTemplate = () => {
         <div
           className="ba"
           style={{
-            width: "1185px",
+            backgroundColor: "#123456",
+            width: "100%",
             height: "563px",
             display: "flex",
+            justifyContent: "center",
           }}
         >
           <div
             className="ba-left"
             style={{
-              width: "534px",
+              width: "100%",
               height: "563px",
               display: "flex",
               justifyContent: "center",
@@ -223,7 +226,7 @@ const AitoLandingTemplate = () => {
             <div
               className="ba-left-box"
               style={{
-                width: "534px",
+                width: "100%",
                 height: "368px",
               }}
             >
@@ -291,7 +294,7 @@ const AitoLandingTemplate = () => {
                 <div
                   className="ba-left-box4-inside"
                   style={{
-                    width: "410px",
+                    width: "100%",
                     height: "48px",
                     display: "flex",
                   }}
