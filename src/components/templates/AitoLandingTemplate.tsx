@@ -1,6 +1,6 @@
 import React from "react";
 
-const AitoLandingPage = () => {
+const AitoLandingTemplate = () => {
   return (
     <div
       style={{
@@ -3015,4 +3015,4 @@ const AitoLandingPage = () => {
   );
 };
 
-export default AitoLandingPage;
+export default AitoLandingTemplate;
